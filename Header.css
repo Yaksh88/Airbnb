@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky; /*The position sticky with top: 0 freezes the bar or header when we scroll*/
+  top: 0;
+  background-color: white; /*white is what we expect for header when we scroll down*/
+  z-index: 100; /*z-index helps us keep elements on top of everyone*/
+  width: 100%; /*width of fixed header*/
+}
+
+.header_icon {
+  object-fit: contain; /*this is going to keep aspect ratio so it doesn't stretch*/
+  height: 100px;
+  margin-left: 20px;
+}
+
+.header_center {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: fit-content; /*Centering input field*/
+  padding: 10px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+}
+
+.header_center > input {
+  padding: 10px;
+  outline-width: 0;
+  border: none;
+  /*width: 250px;*/
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw;
+  margin-right: 80px;
+}
